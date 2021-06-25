@@ -1,0 +1,333 @@
+html, body{
+	height: 100%;
+	background-image: url("plante.jpg");
+	background-size: cover;
+	background-position: center center;
+	font-family: cursive;
+	/* background-color: rgb(37,/ 36, 36); */
+}
+
+.custom-btn{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 125px;
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	background: transparent;
+	box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	7px 7px 20px 0px rgba(0,0,0,.1),
+	4px 4px 5px 0px rgba(0,0,0,.1);
+	transition: all 0.3s ease;
+	font-family: cursive;
+	font-weight: bold;
+	color: rgb(5, 5, 5);
+	cursor: pointer;
+}
+
+.custom-btn::after{
+	position: absolute;
+	content: "";
+	/* border: 1px solid red; */
+	height: 100%;
+	top: 0;
+	left: 0;
+	width: 0;
+	box-shadow: 
+	-7px -7px 20px 0px #fff9,
+	-4px -4px 5px 0px #fff9,
+	7px 7px 20px 0px #0002,
+	4px 4px 5px 0px #0001;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+}
+
+.btn:hover{
+	color: rgb(10, 10, 10);
+}
+
+.btn:hover::after{
+	left: auto;
+	width: 100%;
+	right: 0;
+}
+.custom-btn:active{
+	transition: none;
+	transform: translateY(2px);
+	
+}
+
+
+
+.modal{
+	position: absolute;
+	width: 400px;
+	height: 350px;
+	background-color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	font-family: cursive;
+	font-size: 18px;
+	border-radius: 5px;
+	z-index: 11;
+	
+}
+.media-background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgb(32, 32, 32);
+	opacity: 0.3;
+	z-index: 11;
+
+}
+
+.btn-container{
+	text-align: end;
+	
+}
+
+
+
+.js-btn{
+	width: 125px;
+	height: 40px;
+	border-radius: 5px;
+	background: transparent;
+	box-shadow: -7px -7px 20px 0px #fff9,
+	  -4px -4px 5px 0px #fff9,
+	  7px 7px 20px 0px #0002,
+	  4px 4px 5px 0px #0001;
+	position: relative;
+	transition: all 0.3s ease;
+	border: none;
+	cursor: pointer;
+	
+	
+}
+.btn-2{
+	background: rgb(255,27,0);
+	background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+	transition: all 0.3s ease;
+
+	
+}
+
+
+.js-btn::after{
+	position: absolute;
+	content: "";
+	/* border: 1px solid red; */
+	width: 0;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	border-right: 5px;
+    background: #f0094a;
+
+	box-shadow:
+	-1px -1px 5px 0px #fff,
+	7px 7px 20px 0px #0003,
+	-2px -2px 4px 0px rgb(199, 198, 198),
+	2px 2px 2px 0px rgb(199, 198, 198),
+
+	4px 4px 5px 0px #0002;
+	transition:400ms ease all;
+
+
+}
+
+.js-btn::before{
+	position: absolute;
+	content: "";
+	/* border: 1px solid red; */
+    background: #f0094a;
+	box-shadow:
+	-2px -2px 4px 0px rgb(199, 198, 198),
+	-1px -1px 5px 0px #fff,
+	7px 7px 20px 0px #0003,
+	2px 2px 2px 0px rgb(199, 198, 198),
+
+	4px 4px 5px 0px #0002;
+	width: 0;
+	top: 0;
+	right: 0;
+	height: 1px;
+	border-right: 5px;
+	transition:400ms ease all;
+
+
+}
+
+
+.js-btn:hover{
+	color: #f0095a;
+	background:transparent;
+	box-shadow: none;
+}
+
+.js-btn:hover::before,
+.js-btn:hover::after{
+	width: 100%;
+    transition:800ms ease all;
+}
+
+.js-btn:active{
+	top: 2px;
+}
+
+
+.accept-modal{
+	width: 125px;
+	height: 40px;
+	border-radius: 5px;
+	background: transparent;
+	box-shadow: -7px -7px 20px 0px rgba(214, 206, 206, 0.6),
+	  -4px -4px 5px 0px #fff9,
+	  7px 7px 20px 0px #0002,
+	  4px 4px 5px 0px #0001;
+	position: relative;
+	transition: all 0.3s ease;
+	border: none;
+}
+
+.btn-3 {
+    background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+}
+.btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+  }
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 800ms ease;
+}
+.btn-3:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-3:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+}
+.btn-3:hover:before {
+    height: 100%;
+}
+.btn-3:hover:after {
+    width: 100%;
+}
+.btn-3 span:hover{
+     color: rgba(2,126,251,1);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(2,126,251,1);
+    transition: all 800ms ease;
+}
+.btn-3 span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-3 span:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-3 span:hover:before {
+    height: 100%;
+}
+.btn-3 span:hover:after {
+    width: 100%;
+}
+
+.para-container{
+	display: none;
+}
+/* .js-modal{
+	transition: 800ms all ease;
+}
+
+.js-modal::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 0;
+}
+.js-modal::before{
+	position: absolute;
+	content: "";
+	bottom: 0;
+	right: 0;
+	height: 0;
+	width: 0;
+}
+.js-modal:hover::before,
+.js-modal:hover::after{
+	height: 100%;
+    background: #f0094a;
+	width: 3px;
+}
+
+.js-modal2::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	height: 0;
+	width: 0;
+}
+.js-modal2::before{
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 0;
+}
+
+.js-modal2:hover::after{
+	width: 100%;
+	height: 3px;
+    background: #4a67e6;
+	
+}
+.js-modal2:hover::before{
+	width: 100%;
+	height: 3px;
+    background: #5398e6;
+	
+}
+
+
+.js-span{
+	border: 1px solid red;
+} */

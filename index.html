@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="button-container">
+        <div class="btn">
+            <button type="button" class="btn custom-btn ">Open Modal</button>
+        </div>
+    </div>
+    <div class="para-container">
+        <div class="media-background"></div>
+        <div class="modal">
+            <span>
+                <h1>Custom Modal</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, natus earum laudantium esse nesciunt optio.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, natus earum laudantium esse nesciunt optio.</p>
+                <div class="btn-container">
+                    <button class="btn-2 js-btn close-modal">Close</button>
+                    <button class="btn-3 js-btn3 accept-modal"><span>Accept </span></button>
+                </div>
+
+            </span>
+        </div>
+    </div>
+
+    <script>
+        class Modal{
+            constructor(){
+                this.body = document.querySelector(".para-container");
+
+            }
+            close(){
+                this.body.style.display = "none";
+            }
+            open(){
+                this.body.style.display = "initial";
+            }
+        }
+        var modal = new Modal();
+        var openBtn = document.querySelector(".btn");
+        var closeBtn = document.querySelector(".btn-2")
+        var acceptBtn = document.querySelector(".btn-3")
+
+        openBtn.addEventListener("click", function(e){
+            modal.open();
+        })
+        closeBtn.addEventListener("click", function(e){
+            modal.close()
+        })
+        acceptBtn.addEventListener("click", function(e){
+            alert("We have accepted your request");
+            modal.close();
+        })
+
+        S
+
+    </script>
+    
+</body>
+</html>

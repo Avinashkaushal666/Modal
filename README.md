@@ -1,2 +1,2 @@
 # Modal 
-## https://thugmonkey666.github.io/Modal/
+## https://avinashkaushal666.github.io/Modal/
